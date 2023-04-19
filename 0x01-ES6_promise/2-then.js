@@ -1,6 +1,6 @@
-export default function getFullResponseFromAPI(success){
+export default function handleResponseFromAPI(success) {
   return success
-    .then(() => ({status: 200, body: 'Success'}))
+    .then(() => ({ status: 200, body: 'success' }))
     .catch(() => new Error())
-    .finally(() => console.log("Got a response from the API"));
+    .finally(() => console.log('Got a response from the API'));
 }
