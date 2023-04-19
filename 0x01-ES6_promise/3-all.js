@@ -6,5 +6,5 @@ export default function handleProfileSignup() {
     .then((resolve) => {
       consloe.log(`${resolve[0].body} ${resolve[1].firstName} ${resolve[1].lastName}`);
     })
-    .catch(() => console.log("Signup system offline"));
+    .catch(() => console.log('Signup system offline'));
 }
