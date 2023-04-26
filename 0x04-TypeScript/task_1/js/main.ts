@@ -7,3 +7,7 @@ interface Teacher {
   [x: string]: any;
 }
 
+// Solution for task 2
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
