@@ -21,3 +21,26 @@ const printTeacher: printTeacherFunction = (
   firstName: string,
   lastName: string
 ) => `${firstName.substring(0, 1)}. ${lastName}`;
+
+// Solution for task 4
+interface IStudentClassProps {
+  firstName: string;
+  lastName: string;
+}
+
+interface IStudent {
+  displayName: string;
+  workOnHomework: () => string;
+}
+
+class StudentClass implements IStudent {
+  displayName: string;
+
+  constructor(props: IStudentClassProps) {
+    this.displayName = props.firstName;
+  }
+
+  workOnHomework() {
+    return 'Currently working';
+  }
+}
